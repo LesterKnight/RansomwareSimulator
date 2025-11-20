@@ -1,4 +1,4 @@
-# Projeto de Estudo – Ransomware (Versão Simplificada)
+# Projeto de Estudo – Ransomware
 
 Este documento explica como funciona o código que simula o comportamento de um ransomware. Ele não deve ser executado em computadores pessoais ou ambientes reais.
 
